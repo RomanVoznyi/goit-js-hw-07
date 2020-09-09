@@ -1,0 +1,33 @@
+.picture-list {
+  display: flex;
+}
+
+.picture-item {
+  display: flex;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+
+  border: 3px solid blue;
+  border-radius: 4px;
+}
+
+.picture-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.picture {
+  width: 100%;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
