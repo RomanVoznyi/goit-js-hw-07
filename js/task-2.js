@@ -16,9 +16,10 @@ const ingredients = [
 
 const list = document.querySelector("#ingredients");
 
-const taglist = [];
-for (let i = 0; i < ingredients.length; i++) {
-	taglist.push(document.createElement("li"));
-	taglist[i].textContent = ingredients[i];
-}
+const taglist = ingredients.map(el => {
+	const item = document.createElement("li");
+	item.textContent = el;
+	return item;
+});
+
 list.append(...taglist);

@@ -45,5 +45,5 @@ function createBoxes(amount) {
 }
 
 function destroyBoxes() {
-	[...boxes.childNodes].forEach(el => el.remove());
+	boxes.innerHTML = "";
 }
